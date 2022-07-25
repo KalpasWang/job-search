@@ -7,5 +7,6 @@
   "eslint.validate": ["javascript", "vue"],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "testing.automaticallyOpenPeekView": "never"
 }
