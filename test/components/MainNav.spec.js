@@ -7,4 +7,17 @@ describe('MainNav', () => {
     const wrapper = mount(MainNav)
     expect(wrapper.text()).toContain('Doodle Careers')
   })
+
+  it('顯示導覽選單', () => {
+    const wrapper = mount(MainNav)
+    const navMenuItems = wrapper.findAll('[data-test="nav-items"]')
+    const navMenuTexts = navMenuItems.map((el) => el.text())
+    expect(navMenuTexts).toEqual([
+      'Teams',
+      'Locations',
+      'Benefits',
+      'Jobs',
+      'Students',
+    ])
+  })
 })
