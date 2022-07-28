@@ -10,6 +10,7 @@
     "coverage": "vitest run --dom --coverage"
   },
   "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "vue": "^3.2.25"
   },
   "devDependencies": {
